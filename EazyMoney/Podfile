@@ -11,5 +11,6 @@ target 'EazyMoney' do
   pod "SwiftyJSON"
   pod "CDAlertView"
   pod "SAConfettiView"
+  pod 'Plaid'
 
 end
