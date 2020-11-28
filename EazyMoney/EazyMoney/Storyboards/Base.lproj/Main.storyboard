@@ -274,15 +274,22 @@
                                         </constraints>
                                         <state key="normal" image="add"/>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="eGC-Rj-gTZ">
+                                        <rect key="frame" x="22" y="479" width="370" height="337"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="eGC-Rj-gTZ" firstAttribute="top" secondItem="NOZ-Uz-jHj" secondAttribute="bottom" constant="8" symbolic="YES" id="23J-MZ-mbG"/>
                                     <constraint firstItem="8th-ki-xkd" firstAttribute="top" secondItem="eff-2p-G0Z" secondAttribute="top" constant="170" id="592-rr-X7A"/>
                                     <constraint firstItem="STA-po-lLr" firstAttribute="top" secondItem="eff-2p-G0Z" secondAttribute="top" constant="92" id="FOf-ga-XRH"/>
                                     <constraint firstItem="STA-po-lLr" firstAttribute="leading" secondItem="U16-Ds-RXM" secondAttribute="trailing" constant="22" id="Kaf-of-X53"/>
                                     <constraint firstItem="8th-ki-xkd" firstAttribute="leading" secondItem="eff-2p-G0Z" secondAttribute="leading" constant="22" id="OH1-Cq-oPm"/>
+                                    <constraint firstAttribute="bottom" secondItem="eGC-Rj-gTZ" secondAttribute="bottom" constant="26" id="Wqk-e7-PxA"/>
                                     <constraint firstItem="NOZ-Uz-jHj" firstAttribute="leading" secondItem="eff-2p-G0Z" secondAttribute="leading" constant="22" id="YMn-Fa-9yJ"/>
                                     <constraint firstItem="U16-Ds-RXM" firstAttribute="top" secondItem="8th-ki-xkd" secondAttribute="bottom" constant="8" symbolic="YES" id="Zwf-bg-pcW"/>
+                                    <constraint firstItem="eGC-Rj-gTZ" firstAttribute="leading" secondItem="eff-2p-G0Z" secondAttribute="leading" constant="22" id="Zyn-gk-q5y"/>
+                                    <constraint firstAttribute="trailing" secondItem="eGC-Rj-gTZ" secondAttribute="trailing" constant="22" id="cgE-Hc-az8"/>
                                     <constraint firstItem="U16-Ds-RXM" firstAttribute="leading" secondItem="eff-2p-G0Z" secondAttribute="leading" constant="22" id="dJI-sb-c6B"/>
                                     <constraint firstItem="NOZ-Uz-jHj" firstAttribute="top" secondItem="U16-Ds-RXM" secondAttribute="bottom" constant="94" id="fq8-GS-LGv"/>
                                     <constraint firstAttribute="trailing" secondItem="STA-po-lLr" secondAttribute="trailing" constant="-64" id="kkv-pI-cF2"/>
@@ -397,9 +404,18 @@
                                         </constraints>
                                         <state key="normal" image="buyBtn"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pB4-Cx-mQU">
+                                        <rect key="frame" x="22" y="383" width="86" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="86" id="FEW-9b-lsh"/>
+                                            <constraint firstAttribute="width" constant="86" id="fnW-Wm-DpM"/>
+                                        </constraints>
+                                        <state key="normal" image="search"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="pB4-Cx-mQU" firstAttribute="leading" secondItem="vMo-rn-ho7" secondAttribute="leading" constant="22" id="0pa-19-Jwj"/>
                                     <constraint firstItem="84K-6K-VGv" firstAttribute="leading" secondItem="Wh9-pc-TW5" secondAttribute="trailing" constant="22" id="1Vu-DS-YCd"/>
                                     <constraint firstAttribute="trailing" secondItem="84K-6K-VGv" secondAttribute="trailing" constant="-64" id="2kG-oc-RY1"/>
                                     <constraint firstItem="Wh9-pc-TW5" firstAttribute="top" secondItem="vMo-rn-ho7" secondAttribute="top" constant="170" id="2ps-Ui-hfu"/>
@@ -415,6 +431,7 @@
                                     <constraint firstItem="5co-vU-nFm" firstAttribute="centerX" secondItem="vMo-rn-ho7" secondAttribute="centerX" id="m2d-9u-n0r"/>
                                     <constraint firstAttribute="bottom" secondItem="sZB-aN-YZE" secondAttribute="bottom" id="pwG-Ao-KlO"/>
                                     <constraint firstItem="sZB-aN-YZE" firstAttribute="leading" secondItem="vMo-rn-ho7" secondAttribute="leading" id="qzt-bp-QM8"/>
+                                    <constraint firstItem="pB4-Cx-mQU" firstAttribute="top" secondItem="qMX-as-Epx" secondAttribute="bottom" constant="92" id="r4J-pB-aZQ"/>
                                     <constraint firstItem="vdB-gS-Q8c" firstAttribute="centerX" secondItem="vMo-rn-ho7" secondAttribute="centerX" id="wqJ-rI-tDz"/>
                                 </constraints>
                             </view>
@@ -437,7 +454,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="8mG-he-Raf"/>
-        <segue reference="6TC-kO-mQE"/>
+        <segue reference="A7J-Z3-gZ5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="EazyMoney" width="1095" height="235"/>
@@ -445,11 +462,13 @@
         <image name="add" width="400" height="400"/>
         <image name="bottom" width="290" height="107"/>
         <image name="buyBtn" width="1078" height="254"/>
+        <image name="card" width="1024" height="740"/>
         <image name="chip" width="112" height="125"/>
         <image name="options" width="200" height="200"/>
         <image name="orangeBack" width="732" height="1585"/>
         <image name="profile" width="227" height="240"/>
         <image name="purpleBack" width="732" height="1585"/>
+        <image name="search" width="400" height="400"/>
         <image name="sellBtn" width="1078" height="254"/>
         <image name="smallOrange" width="452" height="837"/>
         <image name="smallPurple" width="452" height="837"/>
