@@ -57,13 +57,20 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallPurple" translatesAutoresizingMaskIntoConstraints="NO" id="mtM-Y8-w5c">
                                                         <rect key="frame" x="0.0" y="0.0" width="204" height="377"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3U-Z2-ppn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="204" height="377"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="mtM-Y8-w5c" firstAttribute="top" secondItem="ryH-IM-ZaA" secondAttribute="top" id="2xd-9w-gVn"/>
                                                     <constraint firstAttribute="width" constant="204" id="3Nj-dX-dEG"/>
+                                                    <constraint firstItem="g3U-Z2-ppn" firstAttribute="leading" secondItem="ryH-IM-ZaA" secondAttribute="leading" id="3fa-Gg-bln"/>
+                                                    <constraint firstAttribute="bottom" secondItem="g3U-Z2-ppn" secondAttribute="bottom" id="CsF-0f-T5P"/>
                                                     <constraint firstAttribute="bottom" secondItem="mtM-Y8-w5c" secondAttribute="bottom" id="Dne-vf-RBQ"/>
                                                     <constraint firstItem="mtM-Y8-w5c" firstAttribute="leading" secondItem="ryH-IM-ZaA" secondAttribute="leading" id="fug-cw-dCF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="g3U-Z2-ppn" secondAttribute="trailing" id="ghI-jL-YCq"/>
+                                                    <constraint firstItem="g3U-Z2-ppn" firstAttribute="top" secondItem="ryH-IM-ZaA" secondAttribute="top" id="hwO-AY-ObJ"/>
                                                     <constraint firstAttribute="height" constant="377" id="rz6-Kg-kHi"/>
                                                     <constraint firstAttribute="trailing" secondItem="mtM-Y8-w5c" secondAttribute="trailing" id="viM-AT-WhE"/>
                                                 </constraints>
@@ -74,6 +81,9 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallOrange" translatesAutoresizingMaskIntoConstraints="NO" id="o3Y-23-cRK">
                                                         <rect key="frame" x="0.0" y="0.0" width="204" height="377"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMU-MN-RbQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="204" height="377"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -81,8 +91,12 @@
                                                     <constraint firstAttribute="bottom" secondItem="o3Y-23-cRK" secondAttribute="bottom" id="5c8-x5-viq"/>
                                                     <constraint firstItem="o3Y-23-cRK" firstAttribute="top" secondItem="WRk-Pw-0Oy" secondAttribute="top" id="AaK-bK-Vmq"/>
                                                     <constraint firstAttribute="width" constant="204" id="BWp-Fb-Hwe"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sMU-MN-RbQ" secondAttribute="bottom" id="DsP-mG-96N"/>
+                                                    <constraint firstItem="sMU-MN-RbQ" firstAttribute="leading" secondItem="WRk-Pw-0Oy" secondAttribute="leading" id="WVt-ts-Elw"/>
                                                     <constraint firstItem="o3Y-23-cRK" firstAttribute="leading" secondItem="WRk-Pw-0Oy" secondAttribute="leading" id="gmy-ZG-pFb"/>
                                                     <constraint firstAttribute="trailing" secondItem="o3Y-23-cRK" secondAttribute="trailing" id="k99-yU-tCH"/>
+                                                    <constraint firstItem="sMU-MN-RbQ" firstAttribute="top" secondItem="WRk-Pw-0Oy" secondAttribute="top" id="lEP-Hj-Wjm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sMU-MN-RbQ" secondAttribute="trailing" id="lhl-77-eXF"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
