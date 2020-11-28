@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  EazyMoney
 //
-//  Created by Utkarsh Sharma on 29/11/20.
+//  Created by Simran Gogia and Utkarsh Sharma on 29/11/20.
 //
 
 import UIKit

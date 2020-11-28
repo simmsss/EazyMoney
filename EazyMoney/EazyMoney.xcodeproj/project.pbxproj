@@ -61,11 +61,7 @@
 				D0CC0F132572EABD0059E665 /* Views */,
 				D0CC0F122572EAB80059E665 /* Storyboards */,
 				D0CC0F112572EAAF0059E665 /* Controllers */,
-				D0CC0EFE2572E9A00059E665 /* SceneDelegate.swift */,
-				D0CC0F002572E9A00059E665 /* ViewController.swift */,
-				D0CC0F022572E9A00059E665 /* Main.storyboard */,
 				D0CC0F052572E9A20059E665 /* Assets.xcassets */,
-				D0CC0F072572E9A20059E665 /* LaunchScreen.storyboard */,
 				D0CC0F0A2572E9A20059E665 /* Info.plist */,
 			);
 			path = EazyMoney;
@@ -74,6 +70,9 @@
 		D0CC0F112572EAAF0059E665 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D0CC0EFC2572E9A00059E665 /* AppDelegate.swift */,
+				D0CC0EFE2572E9A00059E665 /* SceneDelegate.swift */,
+				D0CC0F002572E9A00059E665 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -81,7 +80,8 @@
 		D0CC0F122572EAB80059E665 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				D0CC0EFC2572E9A00059E665 /* AppDelegate.swift */,
+				D0CC0F072572E9A20059E665 /* LaunchScreen.storyboard */,
+				D0CC0F022572E9A00059E665 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
