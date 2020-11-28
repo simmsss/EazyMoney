@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class Portfolio: UIViewController {
 
@@ -28,13 +29,28 @@ class Portfolio: UIViewController {
     @IBAction func sellBtn(_ sender: Any) {
         let endpoint = "https://paper-api.alpaca.markets/v2/orders"
         
-        let parameters = ["symbol": "AAPL", "qty": "1",
+        let parameters = ["symbol": "AAPL", "qty": "6",
                           "side": "buy", "type": "market",
                           "time_in_force": "day"]
         
-        AF.request(endpoint, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+        let headers: HTTPHeaders = [
+          "APCA-API-KEY-ID": "PKKF4RB30X5070KLLI14",
+          "APCA-API-SECRET-KEY": "PqngSsBHFMYt68YSvRb0fmNCPLuQNondXLCYdmVz"
+        ]
+        
+        AF.request(endpoint, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
             .responseData {  response in
-                print(response)
+                guard let data = response.data else { return }
+                let json = try? JSON(data: data)
+                print(json)
+                if let json = json {
+                    let dict = convertToDictionary(text: json.debugDescription)
+                    for (_, value) in dict! {
+                        if let _value = value as? String {
+                            print(_value)
+                        }
+                    }
+                }
             }
     }
     
