@@ -395,6 +395,9 @@
                                             <constraint firstAttribute="width" constant="294" id="rd3-or-6SH"/>
                                         </constraints>
                                         <state key="normal" image="sellBtn"/>
+                                        <connections>
+                                            <action selector="sellBtn:" destination="302-6j-JjO" eventType="touchUpInside" id="eEa-7r-81I"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdB-gS-Q8c">
                                         <rect key="frame" x="60" y="688" width="294" height="60"/>
@@ -403,6 +406,9 @@
                                             <constraint firstAttribute="width" constant="294" id="yFk-BF-8b4"/>
                                         </constraints>
                                         <state key="normal" image="buyBtn"/>
+                                        <connections>
+                                            <action selector="buyButton:" destination="302-6j-JjO" eventType="touchUpInside" id="KhN-dL-5Gc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pB4-Cx-mQU">
                                         <rect key="frame" x="22" y="383" width="86" height="86"/>
@@ -446,6 +452,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ope-6M-m5N"/>
+                    <connections>
+                        <outlet property="buyBtn" destination="vdB-gS-Q8c" id="r3b-Ll-lcc"/>
+                        <outlet property="searchBtn" destination="pB4-Cx-mQU" id="4Sv-Jb-1HI"/>
+                        <outlet property="sellBtn" destination="5co-vU-nFm" id="3mx-dY-pHH"/>
+                        <outlet property="valueLabel" destination="qMX-as-Epx" id="qaY-sR-Guj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vxw-xx-fd7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
