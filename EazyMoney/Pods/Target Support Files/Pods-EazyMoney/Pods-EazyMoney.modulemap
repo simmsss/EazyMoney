@@ -1,0 +1,6 @@
+framework module Pods_EazyMoney {
+  umbrella header "Pods-EazyMoney-umbrella.h"
+
+  export *
+  module * { export * }
+}
