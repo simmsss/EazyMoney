@@ -9,6 +9,7 @@ import UIKit
 import WebKit
 import Alamofire
 import SwiftyJSON
+import CDAlertView
 
 class StockDetail: UIViewController {
     
@@ -117,7 +118,17 @@ class StockDetail: UIViewController {
                             let dict = convertToDictionary(text: json.debugDescription)
                             for (_, value) in dict! {
                                 if let _value = value as? String {
-                                    print(_value)
+                                    let alert = CDAlertView(title: "Order Placed", message: "Your sell order for \(self.stockName) has been placed. It will reflect in your portfolio once accepted.", type: .notification)
+                                    let doneAction = CDAlertViewAction(title: "Yay! 🤑")
+                                    alert.add(action: doneAction)
+                                    alert.show()
+                                                
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 6.0) {
+                                        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                                        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MainVC") as! MainVC
+                                        nextViewController.modalPresentationStyle = .fullScreen
+                                        self.present(nextViewController, animated:true, completion:nil)
+                                    }
                                 }
                             }
                         }
@@ -163,7 +174,19 @@ class StockDetail: UIViewController {
                             let dict = convertToDictionary(text: json.debugDescription)
                             for (_, value) in dict! {
                                 if let _value = value as? String {
-                                    print(_value)
+                                    if(_value == "accepted"){
+                                        let alert = CDAlertView(title: "Order Placed", message: "Your buy order for \(self.stockName) has been placed. It will reflect in your portfolio once accepted.", type: .notification)
+                                        let doneAction = CDAlertViewAction(title: "Yay! 🤑")
+                                        alert.add(action: doneAction)
+                                        alert.show()
+                                                    
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 6.0) {
+                                            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                                            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MainVC") as! MainVC
+                                            nextViewController.modalPresentationStyle = .fullScreen
+                                            self.present(nextViewController, animated:true, completion:nil)
+                                        }
+                                    }
                                 }
                             }
                         }

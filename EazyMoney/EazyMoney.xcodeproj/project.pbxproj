@@ -21,6 +21,7 @@
 		D0CC0F092572E9A20059E665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0CC0F072572E9A20059E665 /* LaunchScreen.storyboard */; };
 		D0CC0F1A2572F1930059E665 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0F182572F1930059E665 /* Portfolio.swift */; };
 		D0CC0F1B2572F1930059E665 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0F192572F1930059E665 /* Accounts.swift */; };
+		D0CFFCC1257391080027C6E0 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CFFCC0257391080027C6E0 /* Quotes.swift */; };
 		D0FAA07D25731E01001DB69B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAA07C25731E01001DB69B /* SearchVC.swift */; };
 		D0FAA08025731EBB001DB69B /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAA07F25731EBB001DB69B /* Date.swift */; };
 		D0FAA08325731EDE001DB69B /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAA08225731EDE001DB69B /* Loader.swift */; };
@@ -47,6 +48,7 @@
 		D0CC0F0A2572E9A20059E665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0CC0F182572F1930059E665 /* Portfolio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		D0CC0F192572F1930059E665 /* Accounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		D0CFFCC0257391080027C6E0 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 		D0FAA07C25731E01001DB69B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		D0FAA07F25731EBB001DB69B /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		D0FAA08225731EDE001DB69B /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				D0FAA07F25731EBB001DB69B /* Date.swift */,
 				D02391AB25735D39005A899E /* Helpers.swift */,
+				D0CFFCC0257391080027C6E0 /* Quotes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				D0FAA08625731EFC001DB69B /* SymbolCell.swift in Sources */,
 				D0FAA08025731EBB001DB69B /* Date.swift in Sources */,
 				D0CC0EFD2572E9A00059E665 /* AppDelegate.swift in Sources */,
+				D0CFFCC1257391080027C6E0 /* Quotes.swift in Sources */,
 				D0C1FE61257311C60030938A /* ConvertToDictionary.swift in Sources */,
 				D0CC0EFF2572E9A00059E665 /* SceneDelegate.swift in Sources */,
 				D0FAA07D25731E01001DB69B /* SearchVC.swift in Sources */,
