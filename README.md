@@ -32,7 +32,7 @@ Supporting clips were either shot by camera to use with permission from free sto
 ### FINANCIAL INCLUSION 
 Majority of the population around the world is not connected to any financial services due to lack of financial literacy. We provide relevant information to beginners so as to bring clarity on basic concepts which, in turn, will help them in managing their financials efficiently and make appropriate decisions. 
 
-![Screenshot](https://github.com/simmsss/EazyMoney/blob/main/Screenshots/Accessiblity%20and%20Portfolio%20Tracking.png?raw=true)
+![Screenshot](https://github.com/simmsss/EazyMoney/blob/main/Screenshots/Options%20and%20Education.png?raw=true)
 
 ### MARKET FIT 
 EazyMoney is a simple, low-cost way of getting into the world of investment. 
