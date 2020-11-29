@@ -19,9 +19,13 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     
     // MARK: Class Variables
     var symbols: [String] = []
+    var symbolsCompany: [String: String] = [:]
     private var filteredSymbols = [String]()
     var similarSymbols: [String] = []
-    let exchange = "osaka_symbols"
+    let exchange = "nasdaq_symbols"
+    
+    var selectedSymbol: String?
+    var selectedName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,17 +39,22 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
         AF.request("https://pkgstore.datahub.io/core/nasdaq-listings/nasdaq-listed_json/data/a5bc7580d6176d60ac0b2142ca8d7df6/nasdaq-listed_json.json", method: .get).responseData { (response) in
                         
             self.symbols.removeAll()
+            self.similarSymbols.removeAll()
+            
+            self.showSpinner(onView: self.view)
             
             guard let data = response.data else { return }
             let json = try! JSON(data: data)
             
-            for (key, subjson):(String, JSON) in json {
+            for (_, subjson):(String, JSON) in json {
                 let symbol = subjson["Symbol"].stringValue
                 self.symbols.append(symbol)
+                self.symbolsCompany[symbol] = subjson["Company Name"].stringValue
             }
             
             self.removeSpinner()
             self.tableView.isHidden = false
+            self.removeSpinner()
             self.tableView.reloadData()
         }
 
@@ -75,63 +84,75 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
             
             return cell!
         }
+    
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if (segue.identifier == "goToDetail") {
+                let vc = segue.destination as! StockDetail
+                vc.stockName = self.selectedName
+                vc.stockSymbol = self.selectedSymbol
+            }
+        }
         
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            let symbol = searchController.isActive ? filteredSymbols[indexPath.row] : symbols[indexPath.row]
+            selectedSymbol = searchController.isActive ? filteredSymbols[indexPath.row] : symbols[indexPath.row]
             
-            self.showSpinner(onView: self.view)
+            selectedName = symbolsCompany[selectedSymbol ?? "AAPL"]
             
-            let url = "https://bearz-and-bullz.herokuapp.com/\(exchange )_symbols?Symbol=\(symbol)"
-            print(url)
+            performSegue(withIdentifier: "goToDetail", sender: nil)
             
-            AF.request(url, method: .post).responseData { (response) in
-                self.similarSymbols.removeAll()
-                
-                print("Request...")
-                
-                guard let data = response.data else { return }
-                let json = try? JSON(data: data)
-                if let json = json {
-                    let dict = convertToDictionary(text: json.debugDescription)
-                    for (_, value) in dict! {
-                        if let _value = value as? String {
-                            self.similarSymbols.append(_value)
-                        }
-                    }
-                }
-                
-                print(self.similarSymbols)
-                
-                let confettiView = SAConfettiView(frame: self.view.bounds)
-                self.view.addSubview(confettiView)
-                confettiView.startConfetti()
-                
-                var stringToShow = "Here are some recommendations tailored according to your existing investments: "
-                
-                var count = 0
-                for element in self.similarSymbols {
-                    if(count < 10){
-                        stringToShow = stringToShow + "\n" + element
-                    }
-                    count+=1
-                }
-                
-                let alert = CDAlertView(title: "Personalised Recommendations", message: stringToShow, type: .notification)
-                let doneAction = CDAlertViewAction(title: "Yay! 🤑")
-                alert.add(action: doneAction)
-                alert.show()
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 12.0) {
-                    confettiView.stopConfetti()
-                    
-                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MainVC") as! MainVC
-                    nextViewController.modalPresentationStyle = .fullScreen
-                    self.present(nextViewController, animated:true, completion:nil)
-                }
-                
-                self.removeSpinner()
-            }
+//            self.showSpinner(onView: self.view)
+//
+//            let url = "https://bearz-and-bullz.herokuapp.com/\(exchange )_symbols?Symbol=\(symbol)"
+//            print(url)
+//
+//            AF.request(url, method: .post).responseData { (response) in
+//                self.similarSymbols.removeAll()
+//
+//                print("Request...")
+//
+//                guard let data = response.data else { return }
+//                let json = try? JSON(data: data)
+//                if let json = json {
+//                    let dict = convertToDictionary(text: json.debugDescription)
+//                    for (_, value) in dict! {
+//                        if let _value = value as? String {
+//                            self.similarSymbols.append(_value)
+//                        }
+//                    }
+//                }
+//
+//                print(self.similarSymbols)
+//
+//                let confettiView = SAConfettiView(frame: self.view.bounds)
+//                self.view.addSubview(confettiView)
+//                confettiView.startConfetti()
+//
+//                var stringToShow = "Here are some recommendations tailored according to your existing investments: "
+//
+//                var count = 0
+//                for element in self.similarSymbols {
+//                    if(count < 10){
+//                        stringToShow = stringToShow + "\n" + element
+//                    }
+//                    count+=1
+//                }
+//
+//                let alert = CDAlertView(title: "Personalised Recommendations", message: stringToShow, type: .notification)
+//                let doneAction = CDAlertViewAction(title: "Yay! 🤑")
+//                alert.add(action: doneAction)
+//                alert.show()
+//
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 12.0) {
+//                    confettiView.stopConfetti()
+//
+//                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//                    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MainVC") as! MainVC
+//                    nextViewController.modalPresentationStyle = .fullScreen
+//                    self.present(nextViewController, animated:true, completion:nil)
+//                }
+//
+//                self.removeSpinner()
+//            }
         }
         
         

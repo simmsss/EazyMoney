@@ -11,6 +11,7 @@
 		D02391A0257349F7005A899E /* BankAcc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023919F257349F7005A899E /* BankAcc.swift */; };
 		D02391A925735C6D005A899E /* plaidview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02391A825735C6D005A899E /* plaidview.swift */; };
 		D02391AC25735D39005A899E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02391AB25735D39005A899E /* Helpers.swift */; };
+		D02391B025736FD9005A899E /* StockDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02391AF25736FD9005A899E /* StockDetail.swift */; };
 		D0C1FE61257311C60030938A /* ConvertToDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C1FE60257311C60030938A /* ConvertToDictionary.swift */; };
 		D0CC0EFD2572E9A00059E665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0EFC2572E9A00059E665 /* AppDelegate.swift */; };
 		D0CC0EFF2572E9A00059E665 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0EFE2572E9A00059E665 /* SceneDelegate.swift */; };
@@ -34,6 +35,7 @@
 		D023919F257349F7005A899E /* BankAcc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAcc.swift; sourceTree = "<group>"; };
 		D02391A825735C6D005A899E /* plaidview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plaidview.swift; sourceTree = "<group>"; };
 		D02391AB25735D39005A899E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		D02391AF25736FD9005A899E /* StockDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetail.swift; sourceTree = "<group>"; };
 		D0C1FE60257311C60030938A /* ConvertToDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToDictionary.swift; sourceTree = "<group>"; };
 		D0CC0EF92572E9A00059E665 /* EazyMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EazyMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0CC0EFC2572E9A00059E665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,13 +83,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		D0C1FE63257315260030938A /* Plaid */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Plaid;
-			sourceTree = "<group>";
-		};
 		D0CC0EF02572E9A00059E665 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +118,6 @@
 		D0CC0F112572EAAF0059E665 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D0C1FE63257315260030938A /* Plaid */,
 				D0CC0EFC2572E9A00059E665 /* AppDelegate.swift */,
 				D0CC0EFE2572E9A00059E665 /* SceneDelegate.swift */,
 				D0CC0F002572E9A00059E665 /* MainVC.swift */,
@@ -132,6 +126,7 @@
 				D0FAA07C25731E01001DB69B /* SearchVC.swift */,
 				D023919F257349F7005A899E /* BankAcc.swift */,
 				D02391A825735C6D005A899E /* plaidview.swift */,
+				D02391AF25736FD9005A899E /* StockDetail.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -286,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02391B025736FD9005A899E /* StockDetail.swift in Sources */,
 				D0CC0F1A2572F1930059E665 /* Portfolio.swift in Sources */,
 				D02391A0257349F7005A899E /* BankAcc.swift in Sources */,
 				D0CC0F012572E9A00059E665 /* MainVC.swift in Sources */,
