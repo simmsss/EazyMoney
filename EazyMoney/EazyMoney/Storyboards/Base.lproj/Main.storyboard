@@ -25,12 +25,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EazyMoney" translatesAutoresizingMaskIntoConstraints="NO" id="9mE-33-Ni4">
-                                <rect key="frame" x="-340.5" y="60" width="1095" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="bKY-mn-Y1X"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnc-xX-5jw">
                                 <rect key="frame" x="20" y="60" width="80" height="80"/>
                                 <constraints>
@@ -350,6 +344,12 @@
                                     <constraint firstAttribute="trailing" secondItem="RQu-tu-L1I" secondAttribute="trailing" constant="12" id="zOd-4b-VIK"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EazyMoney" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lk7-AA-MLz">
+                                <rect key="frame" x="129.5" y="69" width="155" height="41"/>
+                                <fontDescription key="fontDescription" name="AppleGaramond-Bold" family="Apple Garamond" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -360,19 +360,19 @@
                             <constraint firstItem="PfD-U8-wAH" firstAttribute="top" secondItem="U3i-yR-HWN" secondAttribute="bottom" constant="8" symbolic="YES" id="68D-fm-cCY"/>
                             <constraint firstItem="GzR-x5-A5r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6OF-7a-SE8"/>
                             <constraint firstItem="U3i-yR-HWN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8f9-G3-6PS"/>
+                            <constraint firstItem="lk7-AA-MLz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="ABO-yc-xKq"/>
                             <constraint firstItem="PfD-U8-wAH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CSE-Gm-kf4"/>
                             <constraint firstItem="cnc-xX-5jw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ChY-7h-aCB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GzR-x5-A5r" secondAttribute="trailing" constant="20" id="DDT-gH-iXQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PfD-U8-wAH" secondAttribute="trailing" constant="20" id="F7s-8A-8as"/>
                             <constraint firstItem="dg6-Kg-jZP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J83-4e-dMp"/>
-                            <constraint firstItem="9mE-33-Ni4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="PN2-is-rBb"/>
                             <constraint firstItem="3f4-bL-eB0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="QdE-53-hW7"/>
                             <constraint firstItem="bIj-oc-Fhe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XRm-da-ev7"/>
                             <constraint firstItem="U3i-yR-HWN" firstAttribute="top" secondItem="GzR-x5-A5r" secondAttribute="bottom" constant="8" symbolic="YES" id="ZrE-mJ-bg1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3f4-bL-eB0" secondAttribute="trailing" constant="20" id="bkt-7v-05u"/>
-                            <constraint firstItem="9mE-33-Ni4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jJO-4J-fhe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U3i-yR-HWN" secondAttribute="trailing" constant="20" id="puz-5p-vPG"/>
                             <constraint firstItem="dg6-Kg-jZP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rQf-XL-40X"/>
+                            <constraint firstItem="lk7-AA-MLz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tx2-DS-qav"/>
                             <constraint firstItem="bIj-oc-Fhe" firstAttribute="top" secondItem="dg6-Kg-jZP" secondAttribute="bottom" constant="22" id="uiI-fE-Lkw"/>
                             <constraint firstItem="GzR-x5-A5r" firstAttribute="top" secondItem="bIj-oc-Fhe" secondAttribute="bottom" constant="12" id="v4H-mC-6LO"/>
                         </constraints>
@@ -1324,11 +1324,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8mG-he-Raf"/>
-        <segue reference="A7J-Z3-gZ5"/>
+        <segue reference="L9p-9V-Ib8"/>
+        <segue reference="6TC-kO-mQE"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="EazyMoney" width="1095" height="235"/>
         <image name="add" width="400" height="400"/>
         <image name="billAckman" width="1016" height="507"/>
         <image name="buyBtn" width="1078" height="254"/>

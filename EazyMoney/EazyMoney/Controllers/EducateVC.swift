@@ -18,7 +18,7 @@ class EducateVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        getNews()
     }
     
     var newsTitlesDict:[Int: String] = [:]
@@ -83,8 +83,6 @@ class EducateVC: UIViewController {
             let now = Date()
             let oneMonthBefore = now.adding(months: -1)!
             
-            self.newsCollectionView.isHidden = true
-            
             let df = DateFormatter()
             df.dateFormat = "yyyy-MM-dd"
             let date = df.string(from: oneMonthBefore)
@@ -115,6 +113,7 @@ class EducateVC: UIViewController {
                                 
                                 self.newsPublishedDict[counter] = date
                                 counter = counter + 1
+                                print(counter)
                             }
                           }
                         }
@@ -129,6 +128,11 @@ class EducateVC: UIViewController {
                         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                     }
                   }
+                let alert = CDAlertView(title: "Oops, something's not right!", message: "No news to show. We'll be back with more.", type: .error)
+                let doneAction = CDAlertViewAction(title: "Sure! 💪")
+                alert.add(action: doneAction)
+                alert.show()
+                AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             }
         }
 
