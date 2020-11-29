@@ -1,32 +1,48 @@
 PODS:
   - Alamofire (5.2.2)
   - CDAlertView (0.10.0)
+  - ReachabilitySwift (5.0.0)
   - SAConfettiView (0.1.8)
   - SVProgressHUD (2.2.5)
+  - SwiftChart (0.5.0)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - CDAlertView
+  - ReachabilitySwift
   - SAConfettiView
   - SVProgressHUD
+  - SwiftChart (from `https://github.com/aydenp/SwiftChart.git`)
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CDAlertView
+    - ReachabilitySwift
     - SAConfettiView
     - SVProgressHUD
     - SwiftyJSON
 
+EXTERNAL SOURCES:
+  SwiftChart:
+    :git: https://github.com/aydenp/SwiftChart.git
+
+CHECKOUT OPTIONS:
+  SwiftChart:
+    :commit: ed7c331e3a81ceb70e621a6920d3c2865e37bfa7
+    :git: https://github.com/aydenp/SwiftChart.git
+
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   CDAlertView: ee6a87c90c4283c8d316d55633db1a6981f1cc51
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   SAConfettiView: c87031a2280659261b730fce3669fb10e73636ee
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftChart: ef5020d30f8a55e32e8e0a4fec51cf67822cff1d
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 4da779c49d00b0445b9fbc231a9b8f6d85c609bb
+PODFILE CHECKSUM: 72e10995358db59b73672bf39ebb59160eca1e16
 
 COCOAPODS: 1.9.3

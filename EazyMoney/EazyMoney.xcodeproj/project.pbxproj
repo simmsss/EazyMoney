@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D02391992573253D005A899E /* nysesymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02391982573253D005A899E /* nysesymbols.swift */; };
+		D023919C25732B11005A899E /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023919B25732B10005A899E /* RoundedCornerView.swift */; };
 		D0C1FE61257311C60030938A /* ConvertToDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C1FE60257311C60030938A /* ConvertToDictionary.swift */; };
-		D0C1FE6A257315380030938A /* ViewController+PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C1FE64257315380030938A /* ViewController+PublicKey.swift */; };
-		D0C1FE6B257315380030938A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C1FE65257315380030938A /* ViewController.swift */; };
-		D0C1FE6C257315380030938A /* AppDelegate+OAuthSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C1FE67257315380030938A /* AppDelegate+OAuthSupport.swift */; };
-		D0C1FE6D257315380030938A /* AppDelegate+Preflight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C1FE68257315380030938A /* AppDelegate+Preflight.swift */; };
-		D0C1FE6E257315380030938A /* ViewController+LinkToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C1FE69257315380030938A /* ViewController+LinkToken.swift */; };
 		D0CC0EFD2572E9A00059E665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0EFC2572E9A00059E665 /* AppDelegate.swift */; };
 		D0CC0EFF2572E9A00059E665 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0EFE2572E9A00059E665 /* SceneDelegate.swift */; };
 		D0CC0F012572E9A00059E665 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0F002572E9A00059E665 /* MainVC.swift */; };
@@ -21,19 +18,19 @@
 		D0CC0F092572E9A20059E665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0CC0F072572E9A20059E665 /* LaunchScreen.storyboard */; };
 		D0CC0F1A2572F1930059E665 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0F182572F1930059E665 /* Portfolio.swift */; };
 		D0CC0F1B2572F1930059E665 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0F192572F1930059E665 /* Accounts.swift */; };
+		D0FAA07D25731E01001DB69B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAA07C25731E01001DB69B /* SearchVC.swift */; };
+		D0FAA08025731EBB001DB69B /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAA07F25731EBB001DB69B /* Date.swift */; };
+		D0FAA08325731EDE001DB69B /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAA08225731EDE001DB69B /* Loader.swift */; };
+		D0FAA08625731EFC001DB69B /* SymbolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAA08525731EFC001DB69B /* SymbolCell.swift */; };
 		DAB4F49A64AA03A87B33785D /* Pods_EazyMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1EE32D01FAF7E89D67A261 /* Pods_EazyMoney.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71F3D0BB989C24E403AC5F80 /* Pods-EazyMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EazyMoney.debug.xcconfig"; path = "Target Support Files/Pods-EazyMoney/Pods-EazyMoney.debug.xcconfig"; sourceTree = "<group>"; };
 		9E1EE32D01FAF7E89D67A261 /* Pods_EazyMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EazyMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D02391982573253D005A899E /* nysesymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nysesymbols.swift; sourceTree = "<group>"; };
+		D023919B25732B10005A899E /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 		D0C1FE60257311C60030938A /* ConvertToDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToDictionary.swift; sourceTree = "<group>"; };
-		D0C1FE64257315380030938A /* ViewController+PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+PublicKey.swift"; sourceTree = "<group>"; };
-		D0C1FE65257315380030938A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D0C1FE66257315380030938A /* LinkDemo-Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LinkDemo-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		D0C1FE67257315380030938A /* AppDelegate+OAuthSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+OAuthSupport.swift"; sourceTree = "<group>"; };
-		D0C1FE68257315380030938A /* AppDelegate+Preflight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Preflight.swift"; sourceTree = "<group>"; };
-		D0C1FE69257315380030938A /* ViewController+LinkToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+LinkToken.swift"; sourceTree = "<group>"; };
 		D0CC0EF92572E9A00059E665 /* EazyMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EazyMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0CC0EFC2572E9A00059E665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0CC0EFE2572E9A00059E665 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +41,10 @@
 		D0CC0F0A2572E9A20059E665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0CC0F182572F1930059E665 /* Portfolio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		D0CC0F192572F1930059E665 /* Accounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		D0FAA07C25731E01001DB69B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		D0FAA07F25731EBB001DB69B /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		D0FAA08225731EDE001DB69B /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		D0FAA08525731EFC001DB69B /* SymbolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCell.swift; sourceTree = "<group>"; };
 		DB808D603CFCFA9C776AF57C /* Pods-EazyMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EazyMoney.release.xcconfig"; path = "Target Support Files/Pods-EazyMoney/Pods-EazyMoney.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,12 +80,6 @@
 		D0C1FE63257315260030938A /* Plaid */ = {
 			isa = PBXGroup;
 			children = (
-				D0C1FE67257315380030938A /* AppDelegate+OAuthSupport.swift */,
-				D0C1FE68257315380030938A /* AppDelegate+Preflight.swift */,
-				D0C1FE66257315380030938A /* LinkDemo-Swift-Bridging-Header.h */,
-				D0C1FE65257315380030938A /* ViewController.swift */,
-				D0C1FE69257315380030938A /* ViewController+LinkToken.swift */,
-				D0C1FE64257315380030938A /* ViewController+PublicKey.swift */,
 			);
 			path = Plaid;
 			sourceTree = "<group>";
@@ -130,6 +125,7 @@
 				D0CC0F002572E9A00059E665 /* MainVC.swift */,
 				D0CC0F192572F1930059E665 /* Accounts.swift */,
 				D0CC0F182572F1930059E665 /* Portfolio.swift */,
+				D0FAA07C25731E01001DB69B /* SearchVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -146,6 +142,9 @@
 		D0CC0F132572EABD0059E665 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D0FAA08225731EDE001DB69B /* Loader.swift */,
+				D0FAA08525731EFC001DB69B /* SymbolCell.swift */,
+				D023919B25732B10005A899E /* RoundedCornerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +152,8 @@
 		D0CC0F142572EAC10059E665 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0FAA07F25731EBB001DB69B /* Date.swift */,
+				D02391982573253D005A899E /* nysesymbols.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,15 +282,16 @@
 			files = (
 				D0CC0F1A2572F1930059E665 /* Portfolio.swift in Sources */,
 				D0CC0F012572E9A00059E665 /* MainVC.swift in Sources */,
-				D0C1FE6E257315380030938A /* ViewController+LinkToken.swift in Sources */,
-				D0C1FE6A257315380030938A /* ViewController+PublicKey.swift in Sources */,
 				D0CC0F1B2572F1930059E665 /* Accounts.swift in Sources */,
-				D0C1FE6C257315380030938A /* AppDelegate+OAuthSupport.swift in Sources */,
+				D0FAA08625731EFC001DB69B /* SymbolCell.swift in Sources */,
+				D02391992573253D005A899E /* nysesymbols.swift in Sources */,
+				D0FAA08025731EBB001DB69B /* Date.swift in Sources */,
 				D0CC0EFD2572E9A00059E665 /* AppDelegate.swift in Sources */,
-				D0C1FE6D257315380030938A /* AppDelegate+Preflight.swift in Sources */,
 				D0C1FE61257311C60030938A /* ConvertToDictionary.swift in Sources */,
-				D0C1FE6B257315380030938A /* ViewController.swift in Sources */,
 				D0CC0EFF2572E9A00059E665 /* SceneDelegate.swift in Sources */,
+				D0FAA07D25731E01001DB69B /* SearchVC.swift in Sources */,
+				D0FAA08325731EDE001DB69B /* Loader.swift in Sources */,
+				D023919C25732B11005A899E /* RoundedCornerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCH97SA8UR;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = EazyMoney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,6 +467,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "The-Thunderbolts.EazyMoney";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
