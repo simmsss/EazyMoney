@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 import AudioToolbox
 
-class EducateVC: UIViewController {
+class EducateVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var newsCollectionView: UICollectionView!
     @IBOutlet weak var highlightLbl: UILabel!
@@ -19,6 +19,10 @@ class EducateVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getNews()
+        newsCollectionView.reloadData()
+        
+        newsCollectionView.delegate = self
+        newsCollectionView.dataSource = self
     }
     
     var newsTitlesDict:[Int: String] = [:]
@@ -90,7 +94,9 @@ class EducateVC: UIViewController {
             let url : String = "http://newsapi.org/v2/everything?q=AAPL&from=\(date)&sortBy=publishedAt&apiKey=acb1beb15863493ebbf20fc7aae5c65b"
             
             AF.request(url).responseJSON { response in
+                print(response)
                 let value = response.value as? NSDictionary
+                print(value)
                   if ((value) != nil) {
                       
                     var counter = 0
@@ -113,12 +119,10 @@ class EducateVC: UIViewController {
                                 
                                 self.newsPublishedDict[counter] = date
                                 counter = counter + 1
-                                print(counter)
                             }
                           }
                         }
                         
-                        self.newsCollectionView.isHidden = false
                         self.newsCollectionView.reloadData()
                     } else {
                         let alert = CDAlertView(title: "Oops, something's not right!", message: "No news to show. We'll be back with more.", type: .error)
@@ -128,12 +132,18 @@ class EducateVC: UIViewController {
                         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                     }
                   }
-                let alert = CDAlertView(title: "Oops, something's not right!", message: "No news to show. We'll be back with more.", type: .error)
-                let doneAction = CDAlertViewAction(title: "Sure! 💪")
-                alert.add(action: doneAction)
-                alert.show()
-                AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             }
+        }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return newsTitlesDict.count
+        }
+            
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            let cell = newsCollectionView.dequeueReusableCell(withReuseIdentifier: "NewsCell", for: indexPath) as? NewsCell
+            cell?.newsTitleLbl.text = newsTitlesDict[indexPath.row]
+            
+            return cell!
         }
 
 }
