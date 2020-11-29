@@ -15,6 +15,7 @@ Do you want to start your day with a latte and invest some money in your future 
 
 ### TECHNICAL IMPLEMEMTATION 
 *Key Tools, Frameworks and APIs: Xcode, Swift, Python, Flask, Alpaca, Plaid, Sketch*
+
 EazyMoney uses Swift for the native iOS application. All UI elements were created in Sketch and exported as png ﬁles. We use several APIs to boost user security, app efﬁciency and speed. Plaid was used for bank account and wealth management, whereas Alpaca was used for Stocks and ETF investment and trading. Several cocoapods like Alamoﬁre were used to aid the development process. There is also a companion iPadOS app and macOS Native Application, which will be useful given the Apple Silicon transition.
 
 To enhance user security, instead of using Cloud-based Database services like Firebase, we utilise the native CoreData framework for persistent storage.
