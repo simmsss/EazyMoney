@@ -20,5 +20,4 @@ class MainVC: UIViewController {
         portfolioValue.text = "$ \(portvalue)"
     }
 
-
 }

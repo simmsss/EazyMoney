@@ -9,9 +9,12 @@ import UIKit
 
 class Accounts: UIViewController {
 
+    @IBOutlet weak var balanceLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        balanceLbl.text = "$ \(bankbalance)"
         // Do any additional setup after loading the view.
     }
 

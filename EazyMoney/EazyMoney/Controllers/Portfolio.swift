@@ -18,7 +18,7 @@ class Portfolio: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        valueLabel.text = "$ \(portvalue)"
         // Do any additional setup after loading the view.
     }
 
