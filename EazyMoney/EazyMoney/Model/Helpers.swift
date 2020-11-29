@@ -7,4 +7,5 @@
 
 import Foundation
 
-var balance = 1430
+var bankbalance = 1430
+var portvalue = 89.63

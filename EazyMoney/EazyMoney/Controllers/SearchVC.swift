@@ -32,7 +32,7 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
         
         self.tableView.isHidden = true
         
-        AF.request("https://pkgstore.datahub.io/core/nyse-other-listings/nyse-listed_json/data/e8ad01974d4110e790b227dc1541b193/nyse-listed_json.json", method: .get).responseData { (response) in
+        AF.request("https://pkgstore.datahub.io/core/nasdaq-listings/nasdaq-listed_json/data/a5bc7580d6176d60ac0b2142ca8d7df6/nasdaq-listed_json.json", method: .get).responseData { (response) in
                         
             self.symbols.removeAll()
             
@@ -40,7 +40,7 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
             let json = try! JSON(data: data)
             
             for (key, subjson):(String, JSON) in json {
-                let symbol = subjson["ACT Symbol"].stringValue
+                let symbol = subjson["Symbol"].stringValue
                 self.symbols.append(symbol)
             }
             

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D02391992573253D005A899E /* nysesymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02391982573253D005A899E /* nysesymbols.swift */; };
 		D023919C25732B11005A899E /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023919B25732B10005A899E /* RoundedCornerView.swift */; };
 		D02391A0257349F7005A899E /* BankAcc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023919F257349F7005A899E /* BankAcc.swift */; };
 		D02391A925735C6D005A899E /* plaidview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02391A825735C6D005A899E /* plaidview.swift */; };
@@ -31,7 +30,6 @@
 /* Begin PBXFileReference section */
 		71F3D0BB989C24E403AC5F80 /* Pods-EazyMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EazyMoney.debug.xcconfig"; path = "Target Support Files/Pods-EazyMoney/Pods-EazyMoney.debug.xcconfig"; sourceTree = "<group>"; };
 		9E1EE32D01FAF7E89D67A261 /* Pods_EazyMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EazyMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D02391982573253D005A899E /* nysesymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nysesymbols.swift; sourceTree = "<group>"; };
 		D023919B25732B10005A899E /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 		D023919F257349F7005A899E /* BankAcc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAcc.swift; sourceTree = "<group>"; };
 		D02391A825735C6D005A899E /* plaidview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plaidview.swift; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				D0FAA07F25731EBB001DB69B /* Date.swift */,
-				D02391982573253D005A899E /* nysesymbols.swift */,
 				D02391AB25735D39005A899E /* Helpers.swift */,
 			);
 			path = Model;
@@ -294,7 +291,6 @@
 				D0CC0F012572E9A00059E665 /* MainVC.swift in Sources */,
 				D0CC0F1B2572F1930059E665 /* Accounts.swift in Sources */,
 				D0FAA08625731EFC001DB69B /* SymbolCell.swift in Sources */,
-				D02391992573253D005A899E /* nysesymbols.swift in Sources */,
 				D0FAA08025731EBB001DB69B /* Date.swift in Sources */,
 				D0CC0EFD2572E9A00059E665 /* AppDelegate.swift in Sources */,
 				D0C1FE61257311C60030938A /* ConvertToDictionary.swift in Sources */,
