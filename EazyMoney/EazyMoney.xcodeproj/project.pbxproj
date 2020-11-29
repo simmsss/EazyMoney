@@ -22,6 +22,14 @@
 		D0CC0F1A2572F1930059E665 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0F182572F1930059E665 /* Portfolio.swift */; };
 		D0CC0F1B2572F1930059E665 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0F192572F1930059E665 /* Accounts.swift */; };
 		D0CFFCC1257391080027C6E0 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CFFCC0257391080027C6E0 /* Quotes.swift */; };
+		D0CFFCCD257392530027C6E0 /* EducateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CFFCCC257392530027C6E0 /* EducateVC.swift */; };
+		D0CFFCD0257393B70027C6E0 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CFFCCF257393B70027C6E0 /* NewsCell.swift */; };
+		D0CFFCD925739F450027C6E0 /* AppleGaramond-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0CFFCD325739F440027C6E0 /* AppleGaramond-LightItalic.ttf */; };
+		D0CFFCDA25739F450027C6E0 /* AppleGaramond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0CFFCD425739F440027C6E0 /* AppleGaramond.ttf */; };
+		D0CFFCDB25739F450027C6E0 /* AppleGaramond-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0CFFCD525739F440027C6E0 /* AppleGaramond-Bold.ttf */; };
+		D0CFFCDC25739F450027C6E0 /* AppleGaramond-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0CFFCD625739F450027C6E0 /* AppleGaramond-Italic.ttf */; };
+		D0CFFCDD25739F450027C6E0 /* AppleGaramond-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0CFFCD725739F450027C6E0 /* AppleGaramond-BoldItalic.ttf */; };
+		D0CFFCDE25739F450027C6E0 /* AppleGaramond-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0CFFCD825739F450027C6E0 /* AppleGaramond-Light.ttf */; };
 		D0FAA07D25731E01001DB69B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAA07C25731E01001DB69B /* SearchVC.swift */; };
 		D0FAA08025731EBB001DB69B /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAA07F25731EBB001DB69B /* Date.swift */; };
 		D0FAA08325731EDE001DB69B /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAA08225731EDE001DB69B /* Loader.swift */; };
@@ -49,6 +57,14 @@
 		D0CC0F182572F1930059E665 /* Portfolio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		D0CC0F192572F1930059E665 /* Accounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
 		D0CFFCC0257391080027C6E0 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		D0CFFCCC257392530027C6E0 /* EducateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducateVC.swift; sourceTree = "<group>"; };
+		D0CFFCCF257393B70027C6E0 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		D0CFFCD325739F440027C6E0 /* AppleGaramond-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleGaramond-LightItalic.ttf"; sourceTree = "<group>"; };
+		D0CFFCD425739F440027C6E0 /* AppleGaramond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleGaramond.ttf; sourceTree = "<group>"; };
+		D0CFFCD525739F440027C6E0 /* AppleGaramond-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleGaramond-Bold.ttf"; sourceTree = "<group>"; };
+		D0CFFCD625739F450027C6E0 /* AppleGaramond-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleGaramond-Italic.ttf"; sourceTree = "<group>"; };
+		D0CFFCD725739F450027C6E0 /* AppleGaramond-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleGaramond-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D0CFFCD825739F450027C6E0 /* AppleGaramond-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleGaramond-Light.ttf"; sourceTree = "<group>"; };
 		D0FAA07C25731E01001DB69B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		D0FAA07F25731EBB001DB69B /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		D0FAA08225731EDE001DB69B /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
@@ -129,6 +145,7 @@
 				D023919F257349F7005A899E /* BankAcc.swift */,
 				D02391A825735C6D005A899E /* plaidview.swift */,
 				D02391AF25736FD9005A899E /* StockDetail.swift */,
+				D0CFFCCC257392530027C6E0 /* EducateVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -148,6 +165,7 @@
 				D0FAA08225731EDE001DB69B /* Loader.swift */,
 				D0FAA08525731EFC001DB69B /* SymbolCell.swift */,
 				D023919B25732B10005A899E /* RoundedCornerView.swift */,
+				D0CFFCCF257393B70027C6E0 /* NewsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +173,7 @@
 		D0CC0F142572EAC10059E665 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0CFFCD225739F370027C6E0 /* Fonts */,
 				D0FAA07F25731EBB001DB69B /* Date.swift */,
 				D02391AB25735D39005A899E /* Helpers.swift */,
 				D0CFFCC0257391080027C6E0 /* Quotes.swift */,
@@ -168,6 +187,19 @@
 				D0C1FE60257311C60030938A /* ConvertToDictionary.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D0CFFCD225739F370027C6E0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D0CFFCD525739F440027C6E0 /* AppleGaramond-Bold.ttf */,
+				D0CFFCD725739F450027C6E0 /* AppleGaramond-BoldItalic.ttf */,
+				D0CFFCD625739F450027C6E0 /* AppleGaramond-Italic.ttf */,
+				D0CFFCD825739F450027C6E0 /* AppleGaramond-Light.ttf */,
+				D0CFFCD325739F440027C6E0 /* AppleGaramond-LightItalic.ttf */,
+				D0CFFCD425739F440027C6E0 /* AppleGaramond.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +263,13 @@
 			files = (
 				D0CC0F092572E9A20059E665 /* LaunchScreen.storyboard in Resources */,
 				D0CC0F062572E9A20059E665 /* Assets.xcassets in Resources */,
+				D0CFFCDA25739F450027C6E0 /* AppleGaramond.ttf in Resources */,
 				D0CC0F042572E9A00059E665 /* Main.storyboard in Resources */,
+				D0CFFCDE25739F450027C6E0 /* AppleGaramond-Light.ttf in Resources */,
+				D0CFFCD925739F450027C6E0 /* AppleGaramond-LightItalic.ttf in Resources */,
+				D0CFFCDB25739F450027C6E0 /* AppleGaramond-Bold.ttf in Resources */,
+				D0CFFCDC25739F450027C6E0 /* AppleGaramond-Italic.ttf in Resources */,
+				D0CFFCDD25739F450027C6E0 /* AppleGaramond-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +332,9 @@
 				D0CC0EFD2572E9A00059E665 /* AppDelegate.swift in Sources */,
 				D0CFFCC1257391080027C6E0 /* Quotes.swift in Sources */,
 				D0C1FE61257311C60030938A /* ConvertToDictionary.swift in Sources */,
+				D0CFFCD0257393B70027C6E0 /* NewsCell.swift in Sources */,
 				D0CC0EFF2572E9A00059E665 /* SceneDelegate.swift in Sources */,
+				D0CFFCCD257392530027C6E0 /* EducateVC.swift in Sources */,
 				D0FAA07D25731E01001DB69B /* SearchVC.swift in Sources */,
 				D02391A925735C6D005A899E /* plaidview.swift in Sources */,
 				D0FAA08325731EDE001DB69B /* Loader.swift in Sources */,
