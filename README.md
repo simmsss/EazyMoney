@@ -43,7 +43,7 @@ We make investment possible for any figure of money, there is no threshold amoun
 #### Who will benefit from micro-investing?
 Everyone can reap benefits from our platform but it intends to target young investors in particular as they believe they do not have sufficient money to get started. More than 50% of India’s population is below 25, making our target audience wide. 
 
-### FUTUTRE ROADMAP 
+### FUTURE ROADMAP 
 We plan on adding more ETF options to our platform and provide a more diversified set of investment options to our users. 
 
 ## Requirements
