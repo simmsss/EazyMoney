@@ -7,5 +7,9 @@
 
 import Foundation
 
-var bankbalance = 1430
-var portvalue = 89.63
+var bankbalance = 26
+var portvalue = 60.38
+
+var holdings = ["AAPL": 0.2,
+                "ATVI": 0.1,
+                "TSLA": 0.05]
