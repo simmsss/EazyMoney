@@ -310,7 +310,7 @@
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Quanity: 2.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jb-vt-ele">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Quanity: 0.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jb-vt-ele">
                                         <rect key="frame" x="86" y="42" width="107" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="bBL-0x-n3H"/>
@@ -368,6 +368,10 @@
                             <constraint firstItem="GzR-x5-A5r" firstAttribute="top" secondItem="bIj-oc-Fhe" secondAttribute="bottom" constant="12" id="v4H-mC-6LO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="balanceLbl" destination="P6G-dY-6Gz" id="rqO-dd-Rsv"/>
+                        <outlet property="portfolioValue" destination="0SN-kt-pxw" id="2hL-u0-L5u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -458,6 +462,9 @@
                                             <constraint firstAttribute="width" constant="86" id="E27-bX-v3T"/>
                                         </constraints>
                                         <state key="normal" image="add"/>
+                                        <connections>
+                                            <segue destination="9nA-WV-wT1" kind="show" id="daa-Wn-EAk"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="eGC-Rj-gTZ">
                                         <rect key="frame" x="22" y="479" width="370" height="337"/>
@@ -495,6 +502,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECb-as-9dO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="760.86956521739137" y="77.678571428571431"/>
+        </scene>
+        <!--Link View Controller-->
+        <scene sceneID="vuP-81-9CD">
+            <objects>
+                <viewController id="Kyx-Lk-yzJ" customClass="LinkViewController" customModule="EazyMoney" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JPh-tm-O3K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="McA-wx-frW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Chg-Rs-Ckn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PnH-G4-Vai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="743"/>
+        </scene>
+        <!--Plaidview-->
+        <scene sceneID="hPp-iq-GUY">
+            <objects>
+                <viewController id="9nA-WV-wT1" customClass="plaidview" customModule="EazyMoney" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IVa-f6-JHD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXz-99-6jJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xYj-PC-OvN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rXz-99-6jJ" firstAttribute="trailing" secondItem="xYj-PC-OvN" secondAttribute="trailing" id="1hW-6J-YX5"/>
+                            <constraint firstItem="rXz-99-6jJ" firstAttribute="top" secondItem="xYj-PC-OvN" secondAttribute="top" id="Aia-Lw-lBW"/>
+                            <constraint firstAttribute="bottom" secondItem="rXz-99-6jJ" secondAttribute="bottom" id="M73-y3-6Ks"/>
+                            <constraint firstItem="rXz-99-6jJ" firstAttribute="leading" secondItem="xYj-PC-OvN" secondAttribute="leading" id="TzH-yK-VGE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sjH-Cw-OXB"/>
+                    <connections>
+                        <outlet property="webView" destination="rXz-99-6jJ" id="Wej-sp-Dcu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJE-Ud-44F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624.6376811594205" y="742.63392857142856"/>
         </scene>
         <!--Portfolio-->
         <scene sceneID="S7W-E7-l18">

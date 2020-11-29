@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D02391992573253D005A899E /* nysesymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02391982573253D005A899E /* nysesymbols.swift */; };
 		D023919C25732B11005A899E /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023919B25732B10005A899E /* RoundedCornerView.swift */; };
+		D02391A0257349F7005A899E /* BankAcc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023919F257349F7005A899E /* BankAcc.swift */; };
+		D02391A925735C6D005A899E /* plaidview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02391A825735C6D005A899E /* plaidview.swift */; };
+		D02391AC25735D39005A899E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02391AB25735D39005A899E /* Helpers.swift */; };
 		D0C1FE61257311C60030938A /* ConvertToDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C1FE60257311C60030938A /* ConvertToDictionary.swift */; };
 		D0CC0EFD2572E9A00059E665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0EFC2572E9A00059E665 /* AppDelegate.swift */; };
 		D0CC0EFF2572E9A00059E665 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC0EFE2572E9A00059E665 /* SceneDelegate.swift */; };
@@ -30,6 +33,9 @@
 		9E1EE32D01FAF7E89D67A261 /* Pods_EazyMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EazyMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02391982573253D005A899E /* nysesymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nysesymbols.swift; sourceTree = "<group>"; };
 		D023919B25732B10005A899E /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		D023919F257349F7005A899E /* BankAcc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAcc.swift; sourceTree = "<group>"; };
+		D02391A825735C6D005A899E /* plaidview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plaidview.swift; sourceTree = "<group>"; };
+		D02391AB25735D39005A899E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		D0C1FE60257311C60030938A /* ConvertToDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToDictionary.swift; sourceTree = "<group>"; };
 		D0CC0EF92572E9A00059E665 /* EazyMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EazyMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0CC0EFC2572E9A00059E665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +132,8 @@
 				D0CC0F192572F1930059E665 /* Accounts.swift */,
 				D0CC0F182572F1930059E665 /* Portfolio.swift */,
 				D0FAA07C25731E01001DB69B /* SearchVC.swift */,
+				D023919F257349F7005A899E /* BankAcc.swift */,
+				D02391A825735C6D005A899E /* plaidview.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 			children = (
 				D0FAA07F25731EBB001DB69B /* Date.swift */,
 				D02391982573253D005A899E /* nysesymbols.swift */,
+				D02391AB25735D39005A899E /* Helpers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0CC0F1A2572F1930059E665 /* Portfolio.swift in Sources */,
+				D02391A0257349F7005A899E /* BankAcc.swift in Sources */,
 				D0CC0F012572E9A00059E665 /* MainVC.swift in Sources */,
 				D0CC0F1B2572F1930059E665 /* Accounts.swift in Sources */,
 				D0FAA08625731EFC001DB69B /* SymbolCell.swift in Sources */,
@@ -290,7 +300,9 @@
 				D0C1FE61257311C60030938A /* ConvertToDictionary.swift in Sources */,
 				D0CC0EFF2572E9A00059E665 /* SceneDelegate.swift in Sources */,
 				D0FAA07D25731E01001DB69B /* SearchVC.swift in Sources */,
+				D02391A925735C6D005A899E /* plaidview.swift in Sources */,
 				D0FAA08325731EDE001DB69B /* Loader.swift in Sources */,
+				D02391AC25735D39005A899E /* Helpers.swift in Sources */,
 				D023919C25732B11005A899E /* RoundedCornerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

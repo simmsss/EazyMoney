@@ -9,6 +9,9 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var balanceLbl: UILabel!
+    @IBOutlet weak var portfolioValue: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
